@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-m-w=-!kl=fvkuvt-pe_a60y69-4q9&!4*l*w)bl_9cj(fd6t=m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','jayg-5.github.io']
 
 AUTH_USER_MODEL = 'user.User'
 
@@ -88,10 +88,11 @@ CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",  # 예시: 프론트엔드 개발 서버 도메인
     "http://127.0.0.1:5500",  # 예시: 프론트엔드 개발 서버 도메인
-    # ... 다른 도메인들 추가 가능
+    "https://jayg-5.github.io/"
 ]
 CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:5500',
+    "https://jayg-5.github.io/"
 ]
 
 CORS_ALLOW_CREDENTIALS = True

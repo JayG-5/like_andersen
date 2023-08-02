@@ -42,7 +42,7 @@ class KakaoCallbackView(APIView):
     def get(self, request):
         code = request.GET.get('code')
         if not code:
-            return redirect('http://127.0.0.1:5500')
+            return redirect('https://jayg-5.github.io/like_andersen/frontend/')
             return JsonResponse(status=status.HTTP_400_BAD_REQUEST)
 
         request_data = {
@@ -58,7 +58,7 @@ class KakaoCallbackView(APIView):
         token_res = requests.post('https://kauth.kakao.com/oauth/token', data=request_data, headers=token_headers)
         access_token = token_res.json().get('access_token')
         if not access_token:
-            return redirect('http://127.0.0.1:5500')
+            return redirect('https://jayg-5.github.io/like_andersen/frontend/')
             return JsonResponse(status=status.HTTP_400_BAD_REQUEST)
 
         auth_headers = {
@@ -69,7 +69,7 @@ class KakaoCallbackView(APIView):
 
 
         if not user_info.get('kakao_account'):
-            return redirect('http://127.0.0.1:5500')
+            return redirect('https://jayg-5.github.io/like_andersen/frontend/')
             return JsonResponse(status=status.HTTP_400_BAD_REQUEST)
         
         profile = user_info['kakao_account']['profile']
@@ -89,10 +89,10 @@ class KakaoCallbackView(APIView):
                 user = user.save()
             login(request, user)
             serializer = UserSerializer(user)
-            return redirect('http://127.0.0.1:5500')
+            return redirect('https://jayg-5.github.io/like_andersen/frontend/')
             return JsonResponse(serializer.data, status=status.HTTP_200_OK,)
         except:
-            return redirect('http://127.0.0.1:5500')
+            return redirect('https://jayg-5.github.io/like_andersen/frontend/')
             return JsonResponse(status = status.HTTP_400_BAD_REQUEST)
 
 

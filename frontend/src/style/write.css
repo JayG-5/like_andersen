@@ -1,0 +1,17 @@
+.editor-form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  gap: 12px;
+}
+.editor-form button {
+  margin-bottom: 10px;
+}
+.form-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.form-group label {
+  width: 36px;
+}

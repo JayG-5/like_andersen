@@ -1,0 +1,29 @@
+.page-view-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  width: 100vw;
+  height: 10vw;
+  min-height: 150px;
+  max-width: 100%;
+  max-height: 100%;
+
+  /* 스크롤바 제거 */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.page-view-container::-webkit-scrollbar {
+  display: none;
+  width: 1;
+}
+/* 각 페이지 스타일 */
+.page {
+  min-width: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  scroll-snap-align: start;
+  color: white;
+}

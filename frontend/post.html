@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./src/style/nav.css">
+  <link rel="stylesheet" href="./src/style/card.css">
+  <link rel="stylesheet" href="./src/style/header.css">
+
+  <title>나도 안델센 - 동화작성 서비스</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="/"><img class="logo-img" src="./src/assets/logo.svg" alt="로고"></a>
+      <div id="auth-status">
+      </div>
+    </div>
+  </nav>
+  <!-- Header-->
+  <div id="root">
+    <div id="header-section">
+    </div>
+    <!-- Section-->
+    <section class="px-5" id="main">
+    </section>
+  </div>
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
+    </div>
+  </footer>
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.3.0/kakao.min.js"
+    integrity="sha384-70k0rrouSYPWJt7q9rSTKpiTfX6USlMYjZUtr1Du+9o4cGvhPAWxngdtVZDdErlh"
+    crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('17ec9d113c5cdf403aff51ac8c7161ce'); // 사용하려는 앱의 JavaScript 키 입력
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

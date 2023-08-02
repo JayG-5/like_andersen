@@ -8,7 +8,7 @@ import { like } from "./api/board/like.js";
 import { chatbot } from "./api/story/chatbot.js";
 import { writePost } from "./api/board/write.js";
 
-const base = "http://127.0.0.1:8000/api/v1/";
+const base = "http://15.165.62.209/api/v1/";
 export const baseURL = {
   base: base,
   board: {
